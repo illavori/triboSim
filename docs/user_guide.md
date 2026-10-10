@@ -124,6 +124,12 @@ x, Q, _ = loop.calculate(
 The four scripts in [`examples/`](../examples) build up from here to a complete
 virtual test.
 
+![Three friction loops](images/friction_loops.png)
+
+For figures in the same style, call `tribosim.plotting.apply_style()` before
+plotting. It sets a serif font and a teal colour cycle, and the colours are
+available as `LIGHT`, `MID`, `D1` and `DARK` (light to dark) and `BLACK`.
+
 ---
 
 ## 5. Modules

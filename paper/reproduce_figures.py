@@ -21,6 +21,7 @@ sys.path.insert(0, str(HERE.parent))
 sys.path.insert(0, str(HERE))
 from tribosim import (FrictionGenesis, FrictionLoop, GenesisEvent, Sinusoidal,
                       WearModel, add_noise)
+from tribosim.plotting import apply_style, LIGHT, MID, D1, DARK
 import parameters as par
 
 try:
@@ -30,6 +31,7 @@ try:
 except ImportError:
     sys.exit("matplotlib is needed for the figures: pip install matplotlib")
 
+apply_style()
 OUT = HERE / "figures"
 OUT.mkdir(exist_ok=True)
 
@@ -71,7 +73,7 @@ def fig06():
                                       *Sinusoidal().get_stroke(x0, 2000))
             A = abs(trapz(q, x)) / (4 * np.abs(q).max() * np.abs(x).max())
             ax = axs[i, j]
-            ax.plot(x / x0, q / (mu * P))
+            ax.plot(x / x0, q / (mu * P), color=MID if info["regime"] == "partial" else DARK)
             ax.set_title(f"x0/x0,t = {r:g}, A = {A:.2f}", fontsize=8)
             if j == 0:
                 ax.set_ylabel(f"{lab}\nQ/(mu P) [-]")
@@ -95,8 +97,8 @@ def fig09():
     fig, axs = plt.subplots(2, 2, figsize=(10, 6))
     for ax, (name, c) in zip(axs.ravel(), par.GENESIS.items()):
         g = genesis_case(c)
-        ax.plot(g.cycles, g.generate(), lw=0.5, label="model realisation")
-        ax.plot(g.cycles, g.backbone(), lw=1.5, label="backbone")
+        ax.plot(g.cycles, g.generate(), lw=0.5, color=LIGHT, label="model realisation")
+        ax.plot(g.cycles, g.backbone(), lw=1.4, color=DARK, label="backbone")
         if name == "LI21":
             ax.set_xscale("log")
         ax.set_title(f"{name}  ({c['ref']})", fontsize=8)
@@ -112,7 +114,7 @@ def fig10():
         x, q = loop(c)
         if "noise" in c:
             q, _ = add_noise(q, x, rng=np.random.default_rng(1), **c["noise"])
-        ax.plot(x, q / c["P"], lw=0.8)
+        ax.plot(x, q / c["P"], lw=1.0, color=MID)
         ax.set_title(name, fontsize=8)
         ax.set_xlabel("x [mm]"); ax.set_ylabel("CoF [-]")
     save(fig, "fig10_loops")
@@ -154,19 +156,19 @@ def fig11():
           f"against {N / v['f_test'] / 3600:.1f} h of physical test")
 
     fig, axs = plt.subplots(2, 2, figsize=(10, 7))
-    axs[0, 0].plot(gen.cycles, mu, lw=0.4)
+    axs[0, 0].plot(gen.cycles, mu, lw=0.4, color=MID)
     axs[0, 0].set_xlabel("cycle n"); axs[0, 0].set_ylabel("CoF [-]")
-    for n in (5_000, 50_000, N - 1):
+    for n, col in zip((5_000, 50_000, N - 1), (LIGHT, MID, DARK)):
         m = mu[n]
         c.update(mu_s_acc=(v["kappa_acc"] * m,) * 2, mu_s_dec=(m, m))
         x, q = loop(c, sr=200, z0_over_x0=zx[n], mu_k=(m, m))
-        axs[0, 1].plot(x * 1e3, q, label=f"n = {n // 1000} k")
+        axs[0, 1].plot(x * 1e3, q, color=col, label=f"n = {n // 1000} k")
         W, D = w["W_scar"][n], w["z0"][n]
         xp = np.linspace(-W, W, 200)
-        axs[1, 0].plot(xp * 1e3, -D * (1 - (xp / W) ** 2) * 1e3, label=f"n = {n // 1000} k")
+        axs[1, 0].plot(xp * 1e3, -D * (1 - (xp / W) ** 2) * 1e3, color=col, label=f"n = {n // 1000} k")
     axs[0, 1].set_xlabel("x [um]"); axs[0, 1].set_ylabel("Q [N]"); axs[0, 1].legend(fontsize=7)
     axs[1, 0].set_xlabel("x [um]"); axs[1, 0].set_ylabel("depth [um]"); axs[1, 0].legend(fontsize=7)
-    axs[1, 1].plot(gen.cycles, zx)
+    axs[1, 1].plot(gen.cycles, zx, color=DARK)
     axs[1, 1].set_xlabel("cycle n"); axs[1, 1].set_ylabel("z0/x0 = D/W [-]")
     save(fig, "fig11_virtual_test")
 

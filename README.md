@@ -11,7 +11,11 @@ developing and benchmarking CoF estimation methods, for exploring how test
 conditions shape the friction loop, and for generating synthetic data for
 data-driven analysis.
 
-![Friction loops](docs/images/friction_loops.png)
+![Partial to gross slip](docs/images/partial_slip.png)
+
+*Friction loops simulated with triboSim from partial to gross slip, with the
+contact compliance only (top) and with the contact and rig compliances
+(bottom). A is the energy ratio of each loop (Fig. 6 of the article).*
 
 ## What it models
 
@@ -23,6 +27,7 @@ data-driven analysis.
 | Wear | `WearModel` | energy-based wear of the flat and of a ball or cylinder counterbody, whose scar reshapes the loop as it grows |
 | Acquisition | `add_noise` | correlated instrumental noise set by the sensor range, plus tribological noise |
 | Export | `Exporter`, `load_session` | self-describing CSV and saved sessions |
+| Plotting (optional) | `tribosim.plotting.apply_style` | the teal style of the figures, needs Matplotlib |
 
 The simulator is quasi-static and of reduced order. See the
 [scope and limitations](docs/user_guide.md#8-scope-and-limitations).

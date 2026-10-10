@@ -51,12 +51,16 @@ for name, (x, q) in cases.items():
 
 try:
     import matplotlib.pyplot as plt
+    from tribosim.plotting import apply_style, BLACK, MID, DARK
 except ImportError:
     sys.exit(0)
+apply_style()
 fig, ax = plt.subplots(figsize=(5, 3.5))
-for name, (x, q) in cases.items():
-    ax.plot(x, q / P, label=name)
-ax.set_xlabel("x [mm]"); ax.set_ylabel("Q/P [-]"); ax.legend(fontsize=8)
+styles = [dict(color=BLACK, lw=0.8, ls="--"), dict(color=MID, lw=1.4), dict(color=DARK, lw=1.4)]
+labels = ["Coulomb", r"non-Coulomb, $z_0/x_0 = 0.1$", r"overshoot, $\mu_\mathrm{s}/\mu_\mathrm{k} = 1.5$"]
+for (x, q), st, lab in zip(cases.values(), styles, labels):
+    ax.plot(x, q / P, label=lab, **st)
+ax.set_xlabel(r"$x$ [mm]"); ax.set_ylabel(r"$Q/P$ [-]"); ax.legend(loc="center")
 out = Path(__file__).parent / "output"; out.mkdir(exist_ok=True)
 fig.tight_layout(); fig.savefig(out / "01_friction_loop.png", dpi=150)
 print("saved", out / "01_friction_loop.png")

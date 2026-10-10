@@ -33,12 +33,14 @@ print("random events:", [(int(e.cycle), round(e.amplitude, 3)) for e in rnd])
 
 try:
     import matplotlib.pyplot as plt
+    from tribosim.plotting import apply_style, MID, DARK
 except ImportError:
     sys.exit(0)
+apply_style()
 fig, ax = plt.subplots(figsize=(6, 3))
-ax.plot(mu_fw, lw=0.6, label="forward")
-ax.plot(mu_bw, lw=0.6, label="backward")
-ax.set_xlabel("cycle n"); ax.set_ylabel("CoF [-]"); ax.legend()
+ax.plot(mu_fw, lw=0.6, color=DARK, label="forward")
+ax.plot(mu_bw, lw=0.6, color=MID, label="backward")
+ax.set_xlabel(r"Cycle, $n$"); ax.set_ylabel("CoF [-]"); ax.legend(loc="lower right")
 out = Path(__file__).parent / "output"; out.mkdir(exist_ok=True)
 fig.tight_layout(); fig.savefig(out / "02_cof_genesis.png", dpi=150)
 print("saved", out / "02_cof_genesis.png")
