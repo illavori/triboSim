@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use triboSim, please cite the article below."
+title: "triboSim: a physics-based analytical simulator of reciprocating sliding tribological tests"
+version: 1.0.0
+license: MIT
+authors:
+  - family-names: Llavori
+    given-names: Iñigo
+    affiliation: Mondragon Unibertsitatea
+preferred-citation:
+  type: article
+  title: "An analytical model for virtual reciprocating sliding tribological tests"
+  authors:
+    - family-names: Llavori
+      given-names: Iñigo
+  journal: "Submitted"
+  year: 2026
+repository-code: "https://github.com/illavori/triboSim"

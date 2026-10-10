@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.venv/
+venv/
+output/
+*_recovery/
+paper/figures/
+examples/output/
+.DS_Store
+Thumbs.db
+desktop.ini

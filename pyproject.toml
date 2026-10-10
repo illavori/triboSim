@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tribosim"
+version = "1.0.0"
+description = "Physics-based analytical simulator of reciprocating sliding tribological tests"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Iñigo Llavori" }]
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.21"]
+keywords = ["tribology", "friction loop", "reciprocating sliding", "fretting",
+            "wear", "coefficient of friction", "synthetic data"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+
+[project.optional-dependencies]
+fast = ["scipy"]          # faster AR1 noise filter
+plot = ["matplotlib"]     # examples and paper scripts
+test = ["pytest"]
+
+[tool.setuptools]
+packages = ["tribosim"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
