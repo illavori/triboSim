@@ -8,6 +8,8 @@ Runs with pytest, or as a plain script from the repository root:
 Each test checks a physical or numerical invariant (closed loop, analytical
 Coulomb area, volume conservation, AR1 statistics, ...) rather than frozen
 numbers, so it stays valid when parameters are tuned.
+
+Author : Iñigo Llavori Osa - Mondragon Unibertsitatea
 """
 
 from __future__ import annotations

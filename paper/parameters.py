@@ -8,6 +8,8 @@ this folder for the source of each one.
 
 Units: mm, N, s, MPa.  Rate constants lambda are in s/mm, for the velocity in
 mm/s (kinematics called with f_test).
+
+Author : Iñigo Llavori Osa - Mondragon Unibertsitatea
 """
 import math
 

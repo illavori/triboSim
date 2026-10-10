@@ -10,6 +10,8 @@ The ground-truth parameters of every module are known, so the output can be
 used to test CoF estimation methods.
 
     python examples/04_virtual_test.py
+
+Author : Iñigo Llavori Osa - Mondragon Unibertsitatea
 """
 from pathlib import Path
 import sys

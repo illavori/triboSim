@@ -44,3 +44,7 @@ be found in the following sources:
   illustrative.
 * The noisy loop is normalised by the load (P = 1), so its stiffness is given
   per unit load.
+
+---
+
+Iñigo Llavori, Mondragon Unibertsitatea.

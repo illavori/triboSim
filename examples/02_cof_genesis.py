@@ -5,6 +5,8 @@ Forward and backward strokes with a run-in, a two-segment drift, a drop and a
 peak event, and the correlated cycle-to-cycle fluctuation.
 
     python examples/02_cof_genesis.py
+
+Author : Iñigo Llavori Osa - Mondragon Unibertsitatea
 """
 from pathlib import Path
 import sys

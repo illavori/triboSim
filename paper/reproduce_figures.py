@@ -7,6 +7,8 @@ parameters.py (model only, the measured curves are not distributed).
 
 Figures are written to paper/figures/.  Fig. 11 runs 500 000 cycles and takes
 a few minutes, as reported in the article.
+
+Author : Iñigo Llavori Osa - Mondragon Unibertsitatea
 """
 from pathlib import Path
 import sys

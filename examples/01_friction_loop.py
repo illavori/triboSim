@@ -5,6 +5,8 @@ Three loops for the same contact: Coulomb, non-Coulomb (worn groove) and with
 a static-to-kinetic overshoot at each reversal.
 
     python examples/01_friction_loop.py
+
+Author : Iñigo Llavori Osa - Mondragon Unibertsitatea
 """
 from pathlib import Path
 import sys

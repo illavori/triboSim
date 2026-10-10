@@ -9,7 +9,13 @@ kinematics   : Crank-slider, sinusoidal and trapezoidal displacement / velocity 
 friction_loop: Tangential force loop (static + kinematic, Oden-Martins)
 acquisition  : AR1 coloured-noise signal acquisition model
 export       : CSV and shelve export/import helpers
+
+Author : Iñigo Llavori Osa - Mondragon Unibertsitatea
 """
+
+__author__ = "Iñigo Llavori Osa"
+__version__ = "1.0.0"
+__license__ = "MIT"
 
 from .genesis import FrictionGenesis, GenesisEvent
 from .wear import WearModel

@@ -7,6 +7,8 @@ closed partial slip loops.  The energy ratio A = E_d / (4 Q* delta*) of
 Fouvry et al. (1995) is printed for each stroke.
 
     python examples/03_partial_slip.py
+
+Author : Iñigo Llavori Osa - Mondragon Unibertsitatea
 """
 from pathlib import Path
 import sys

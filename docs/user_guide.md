@@ -450,3 +450,7 @@ If you use `tribosim`, please cite:
 > tribological tests (2026), submitted.
 
 The full reference will be updated on publication. See also `CITATION.cff`.
+
+---
+
+Iñigo Llavori, Mondragon Unibertsitatea.
