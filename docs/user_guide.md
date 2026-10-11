@@ -453,4 +453,4 @@ The full reference will be updated on publication. See also `CITATION.cff`.
 
 ---
 
-Iñigo Llavori (Mondragon Unibertsitatea) and Xavier Borras (iTribomat - European Tribology Center).
+Iñigo Llavori (Mondragon Unibertsitatea) and Xavier Borras (iTribomat - European Tribology Centre).

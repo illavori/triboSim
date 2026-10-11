@@ -9,7 +9,7 @@ authors:
     affiliation: Mondragon Unibertsitatea
   - family-names: Borras
     given-names: Xavier
-    affiliation: "iTribomat - European Tribology Center"
+    affiliation: "iTribomat - European Tribology Centre"
 repository-code: "https://github.com/illavori/triboSim"
 preferred-citation:
   type: article
@@ -20,7 +20,7 @@ preferred-citation:
       affiliation: Mondragon Unibertsitatea
     - family-names: Borras
       given-names: Xavier
-      affiliation: "iTribomat - European Tribology Center"
+      affiliation: "iTribomat - European Tribology Centre"
     - family-names: Zabala
       given-names: Alaitz
       affiliation: Mondragon Unibertsitatea

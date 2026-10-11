@@ -86,4 +86,4 @@ See `CITATION.cff`. The reference will be completed on publication.
 
 MIT, see [LICENSE](LICENSE). Contributions and issues are welcome.
 
-Iñigo Llavori (Mondragon Unibertsitatea) and Xavier Borras (iTribomat - European Tribology Center).
+Iñigo Llavori (Mondragon Unibertsitatea) and Xavier Borras (iTribomat - European Tribology Centre).

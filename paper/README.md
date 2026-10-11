@@ -47,4 +47,4 @@ be found in the following sources:
 
 ---
 
-Iñigo Llavori (Mondragon Unibertsitatea) and Xavier Borras (iTribomat - European Tribology Center).
+Iñigo Llavori (Mondragon Unibertsitatea) and Xavier Borras (iTribomat - European Tribology Centre).
