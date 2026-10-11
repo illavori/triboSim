@@ -2,7 +2,7 @@
 
 This folder regenerates the simulated curves of
 
-> I. Llavori, *An analytical model for virtual reciprocating sliding
+> I. Llavori, X. Borras, A. Zabala, *An analytical model for virtual reciprocating sliding
 > tribological tests* (2026), submitted.
 
 * `parameters.py` holds the fitted parameters of every case: Table 2 (CoF
@@ -47,4 +47,4 @@ be found in the following sources:
 
 ---
 
-Iñigo Llavori, Mondragon Unibertsitatea.
+Iñigo Llavori (Mondragon Unibertsitatea) and Xavier Borras (iTribomat - European Tribology Center).

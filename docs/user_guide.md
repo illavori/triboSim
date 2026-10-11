@@ -446,11 +446,11 @@ for example:
 
 If you use `tribosim`, please cite:
 
-> I. Llavori, An analytical model for virtual reciprocating sliding
+> I. Llavori, X. Borras, A. Zabala, An analytical model for virtual reciprocating sliding
 > tribological tests (2026), submitted.
 
 The full reference will be updated on publication. See also `CITATION.cff`.
 
 ---
 
-Iñigo Llavori, Mondragon Unibertsitatea.
+Iñigo Llavori (Mondragon Unibertsitatea) and Xavier Borras (iTribomat - European Tribology Center).

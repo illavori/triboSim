@@ -7,12 +7,22 @@ authors:
   - family-names: Llavori
     given-names: Iñigo
     affiliation: Mondragon Unibertsitatea
+  - family-names: Borras
+    given-names: Xavier
+    affiliation: "iTribomat - European Tribology Center"
+repository-code: "https://github.com/illavori/triboSim"
 preferred-citation:
   type: article
   title: "An analytical model for virtual reciprocating sliding tribological tests"
   authors:
     - family-names: Llavori
       given-names: Iñigo
+      affiliation: Mondragon Unibertsitatea
+    - family-names: Borras
+      given-names: Xavier
+      affiliation: "iTribomat - European Tribology Center"
+    - family-names: Zabala
+      given-names: Alaitz
+      affiliation: Mondragon Unibertsitatea
   journal: "Submitted"
   year: 2026
-repository-code: "https://github.com/illavori/triboSim"

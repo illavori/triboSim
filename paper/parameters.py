@@ -1,6 +1,6 @@
 """
 Fitted parameters of the article "An analytical model for virtual reciprocating
-sliding tribological tests" (Llavori, 2026).
+sliding tribological tests" (Llavori, Borras and Zabala, 2026).
 
 Only the simulator inputs are given here.  The experimental curves they were
 fitted to belong to their authors and are not distributed; see README.md in

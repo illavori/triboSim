@@ -77,7 +77,7 @@ python -m pytest        # or: python tests/test_tribosim.py
 
 If you use `tribosim`, please cite
 
-> I. Llavori, *An analytical model for virtual reciprocating sliding
+> I. Llavori, X. Borras, A. Zabala, *An analytical model for virtual reciprocating sliding
 > tribological tests* (2026), submitted.
 
 See `CITATION.cff`. The reference will be completed on publication.
@@ -86,4 +86,4 @@ See `CITATION.cff`. The reference will be completed on publication.
 
 MIT, see [LICENSE](LICENSE). Contributions and issues are welcome.
 
-Iñigo Llavori, Mondragon Unibertsitatea.
+Iñigo Llavori (Mondragon Unibertsitatea) and Xavier Borras (iTribomat - European Tribology Center).
