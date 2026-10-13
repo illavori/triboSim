@@ -35,9 +35,9 @@ be found in the following sources:
 
 ## Notes
 
-* The rate constants λ are given in s/mm, for the velocity in mm/s. The test
-  frequency of the NBR case is still to be confirmed, and its λ depends on it.
-  The loop itself does not.
+* The rate constants λ are given in s/mm, for the velocity in mm/s. The NBR
+  test ran with a trapezoidal velocity profile (ramps of about 10 % of each
+  stroke), the other loops with a sinusoidal one.
 * The genesis events of Table 2 were detected in the fits. Their onset and
   recovery lengths are not part of the fit, so the values used here are
   illustrative.

@@ -60,9 +60,11 @@ LOOPS = {
         mu_k=(0.80, 0.80), mu_s_acc=(0.68, 0.68), mu_s_dec=(0.80, 0.80),
         lam_acc=_per_second(60.0, 20.0), lam_dec=_per_second(5.0, 20.0)),
     "static-kinetic (NBR, present study)": dict(
-        P=99.1, x0=25.5, f_test=1e-3, S=300.0, D_c=8.0, z0_over_x0=0.0,   # f_test to be confirmed
+        # 8 mm NBR thin-disc pin on S355 steel, lubricated, 60 C, 2 MPa, 50 mm nominal
+        # stroke (measured amplitude 25.5 mm), 0.1 m/s with a trapezoidal profile
+        P=99.1, x0=25.5, f_test=1.0, S=300.0, D_c=8.0, z0_over_x0=0.0, ramp=0.10,
         mu_k=(0.130, 0.140), mu_s_acc=(0.310, 0.245), mu_s_dec=(0.153, 0.185),
-        lam_acc=_per_second(0.5, 1e-3), lam_dec=_per_second(0.5, 1e-3)),
+        lam_acc=0.045, lam_dec=0.11),
     "asymmetric (Kumar et al.)": dict(
         P=20.0, x0=0.99, f_test=5.0, S=150.0, D_c=0.18, z0_over_x0=0.0,
         mu_k=(0.79, 0.275), mu_s_acc=(0.316, 0.11), mu_s_dec=(0.79, 0.275),

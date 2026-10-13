@@ -22,7 +22,7 @@ HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent))
 sys.path.insert(0, str(HERE))
 from tribosim import (FrictionGenesis, FrictionLoop, GenesisEvent, Sinusoidal,
-                      WearModel, add_noise)
+                      Trapezoidal, WearModel, add_noise)
 from tribosim.plotting import apply_style, LIGHT, MID, D1, DARK
 import parameters as par
 
@@ -48,7 +48,8 @@ def save(fig, name):
 def loop(c, sr=500, z0_over_x0=None, mu_k=None):
     """One friction loop from a parameter dict of parameters.LOOPS."""
     mk = mu_k if mu_k is not None else c["mu_k"]
-    kin = Sinusoidal().get_stroke(c["x0"], sr, f_test=c["f_test"])
+    drive = Trapezoidal(c["ramp"]) if c.get("ramp") else Sinusoidal()
+    kin = drive.get_stroke(c["x0"], sr, f_test=c["f_test"])
     fl = FrictionLoop(c["P"], c["S"], d_c=c["D_c"], lambda_acc=c["lam_acc"],
                       lambda_dec=c["lam_dec"])
     zx = c["z0_over_x0"] if z0_over_x0 is None else z0_over_x0
