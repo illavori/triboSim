@@ -77,8 +77,7 @@ python -m pytest        # or: python tests/test_tribosim.py
 
 If you use `tribosim`, please cite
 
-> I. Llavori, X. Borras, A. Zabala, *An analytical model for virtual reciprocating sliding
-> tribological tests* (2026), submitted.
+> I. Llavori, X. Borras, A. Zabala, *An open simulator of reciprocating sliding tribological tests with known ground truth* (2026), submitted.
 
 See `CITATION.cff`. The reference will be completed on publication.
 

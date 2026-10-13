@@ -2,8 +2,7 @@
 
 This folder regenerates the simulated curves of
 
-> I. Llavori, X. Borras, A. Zabala, *An analytical model for virtual reciprocating sliding
-> tribological tests* (2026), submitted.
+> I. Llavori, X. Borras, A. Zabala, *An open simulator of reciprocating sliding tribological tests with known ground truth* (2026), submitted.
 
 * `parameters.py` holds the fitted parameters of every case: Table 2 (CoF
   genesis), Table 3 (friction loops) and the virtual test of Section 3.3.

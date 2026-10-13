@@ -446,8 +446,7 @@ for example:
 
 If you use `tribosim`, please cite:
 
-> I. Llavori, X. Borras, A. Zabala, An analytical model for virtual reciprocating sliding
-> tribological tests (2026), submitted.
+> I. Llavori, X. Borras, A. Zabala, An open simulator of reciprocating sliding tribological tests with known ground truth (2026), submitted.
 
 The full reference will be updated on publication. See also `CITATION.cff`.
 
