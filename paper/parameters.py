@@ -1,5 +1,5 @@
 """
-Fitted parameters of the article "An open simulator of reciprocating sliding tribological tests with known ground truth" (Llavori, Borras and Zabala, 2026).
+Fitted parameters of the article "An open physics-based simulator of reciprocating sliding tests with known friction and wear parameters" (Llavori, Borras and Zabala, 2026).
 
 Only the simulator inputs are given here.  The experimental curves they were
 fitted to belong to their authors and are not distributed; see README.md in

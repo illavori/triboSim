@@ -13,7 +13,7 @@ authors:
 repository-code: "https://github.com/illavori/triboSim"
 preferred-citation:
   type: article
-  title: "An open simulator of reciprocating sliding tribological tests with known ground truth"
+  title: "An open physics-based simulator of reciprocating sliding tests with known friction and wear parameters"
   authors:
     - family-names: Llavori
       given-names: Iñigo
