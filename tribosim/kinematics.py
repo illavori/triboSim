@@ -14,8 +14,10 @@ radian of crank angle (mm/rad), kept for backward compatibility.
 
 CrankSlider
     Non-sinusoidal profile governed by crank radius r and rod length l
-    (Eqs. eq:crank / eq:crank_vel).  Asymmetry between forward and
-    backward strokes increases with the ratio r/l.
+    (Eqs. eq:crank / eq:crank_vel).  The ratio r/l makes the velocity
+    profile asymmetric about the centre of the stroke (the velocity peak
+    moves towards one end); the forward and backward strokes stay mirror
+    images, with the same speed at a given position.
 
 Sinusoidal
     Pure harmonic profile x(t) = x0·sin(ωt), produced by piezoelectric

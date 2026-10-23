@@ -208,8 +208,10 @@ x_fw, x_bw, v_fw, v_bw = Sinusoidal().get_stroke(x0, sr, f_test=f_test)
   use `sr = f_s / (2 * f_test)`.
 * `Sinusoidal()` is a harmonic profile, x = x0 sin(ωt).
 * `CrankSlider(crank_radius=75, rod_length=150, n_points=2000)` is the profile
-  of a crank-slider drive. The ratio r/l sets the asymmetry between
-  the strokes, and the profile tends to the sinusoidal one as r/l goes to zero.
+  of a crank-slider drive. The ratio r/l makes the velocity profile asymmetric
+  about the centre of the stroke (the velocity peak moves towards one end),
+  while the forward and backward strokes stay mirror images. The profile tends
+  to the sinusoidal one as r/l goes to zero.
   The crank sizes only set the shape, the amplitude is always `x0`.
 * `Trapezoidal(ramp_fraction=0.1)` is a constant-velocity profile with linear
   ramps, typical of ball-screw and linear-motor drives.
