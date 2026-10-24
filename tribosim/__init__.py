@@ -13,7 +13,7 @@ export       : CSV and shelve export/import helpers
 Author : Iñigo Llavori Osa - Mondragon Unibertsitatea
 """
 
-__author__ = "Iñigo Llavori Osa, Xavier Borras"
+__author__ = "Iñigo Llavori Osa, Xavier Borras, Alaitz Zabala"
 __version__ = "1.0.0"
 __license__ = "MIT"
 

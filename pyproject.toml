@@ -8,7 +8,7 @@ version = "1.0.0"
 description = "Physics-based analytical simulator of reciprocating sliding tribological tests"
 readme = "README.md"
 license = { text = "MIT" }
-authors = [{ name = "Iñigo Llavori" }, { name = "Xavier Borras" }]
+authors = [{ name = "Iñigo Llavori" }, { name = "Xavier Borras" }, { name = "Alaitz Zabala" }]
 requires-python = ">=3.9"
 dependencies = ["numpy>=1.21"]
 keywords = ["tribology", "friction loop", "reciprocating sliding", "fretting",

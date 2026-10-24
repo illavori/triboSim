@@ -101,4 +101,4 @@ repository* button gives the same article, from `CITATION.cff`.
 
 MIT, see [LICENSE](LICENSE). Contributions and issues are welcome.
 
-Iñigo Llavori (Mondragon Unibertsitatea) and Xavier Borras (iTribomat - European Tribology Centre).
+Iñigo Llavori (Mondragon Unibertsitatea), Xavier Borras (iTribomat - European Tribology Centre) and Alaitz Zabala (Mondragon Unibertsitatea).
