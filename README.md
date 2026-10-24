@@ -2,6 +2,11 @@
 
 **A physics-based analytical simulator of reciprocating sliding tribological tests.**
 
+> This code accompanies the article *An open physics-based simulator of
+> reciprocating sliding tests with known friction and wear parameters*
+> (I. Llavori, X. Borras, A. Zabala, 2026, submitted). If you use it, please
+> cite the article, see [Citing](#citing).
+
 `tribosim` generates complete virtual reciprocating sliding tests: the
 coefficient of friction (CoF) over the cycles, the friction loop of every
 cycle, the wear scar, and the noisy force and displacement signals that a
@@ -75,11 +80,22 @@ python -m pytest        # or: python tests/test_tribosim.py
 
 ## Citing
 
-If you use `tribosim`, please cite
+If you use `tribosim`, please cite the article
 
 > I. Llavori, X. Borras, A. Zabala, *An open physics-based simulator of reciprocating sliding tests with known friction and wear parameters* (2026), submitted.
 
-See `CITATION.cff`. The reference will be completed on publication.
+```bibtex
+@article{llavori2026tribosim,
+  author  = {Llavori, I{\~n}igo and Borras, Xavier and Zabala, Alaitz},
+  title   = {An open physics-based simulator of reciprocating sliding tests
+             with known friction and wear parameters},
+  journal = {Submitted},
+  year    = {2026}
+}
+```
+
+The reference will be completed on publication. GitHub's *Cite this
+repository* button gives the same article, from `CITATION.cff`.
 
 ## Licence
 
