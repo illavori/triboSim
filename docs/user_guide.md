@@ -396,7 +396,7 @@ Some practical points:
 (`parameters.py`) and a script that regenerates the simulated curves:
 
 ```bash
-python paper/reproduce_figures.py          # Figs. 6, 9, 10 and 11
+python paper/reproduce_figures.py          # Figs. 3 to 11
 python paper/reproduce_figures.py fig11    # only the virtual test (a few minutes)
 ```
 

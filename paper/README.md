@@ -5,12 +5,13 @@ This folder regenerates the simulated curves of
 > I. Llavori, X. Borras, A. Zabala, *An open physics-based simulator of reciprocating sliding tests with known friction and wear parameters* (2026), submitted.
 
 * `parameters.py` holds the fitted parameters of every case: Table 2 (CoF
-  genesis), Table 3 (friction loops) and the virtual test of Section 3.3.
+  genesis), Table 3 (friction loops) and the virtual test of Section 3.3, and
+  the inputs of the illustrations of Section 2 (Figs. 3, 4, 5, 7 and 8).
 * `reproduce_figures.py` runs the simulator with them and writes the figures
   to `figures/`.
 
 ```bash
-python paper/reproduce_figures.py          # Figs. 6, 9, 10 and 11
+python paper/reproduce_figures.py          # Figs. 3 to 11
 python paper/reproduce_figures.py fig10    # one figure
 ```
 
@@ -31,7 +32,7 @@ be found in the following sources:
 | CoF trace and asymmetric loop | A. Kumar, R. Mukherjee, M.K. Singh, Synergistic effect of cold rolling and heat treatment on tribological performance of Inconel-718 at room and high temperature, *Wear* 584-585 (2026) 206384. [doi:10.1016/j.wear.2025.206384](https://doi.org/10.1016/j.wear.2025.206384) |
 | CoF trace | C. Li, X. Deng, Z. Wang, Friction behaviour and self-lubricating mechanism of low alloy martensitic steel during reciprocating sliding, *Wear* 482-483 (2021) 203972. [doi:10.1016/j.wear.2021.203972](https://doi.org/10.1016/j.wear.2021.203972) |
 | Noisy loop | F. Kafexhiu, I. Velkavrh, T. Wright et al., Adaptive algorithm for automated CoF evaluation, *Tribology Letters* 73 (2025) 81. [doi:10.1007/s11249-025-02015-x](https://doi.org/10.1007/s11249-025-02015-x) |
-| Static-kinetic loop (NBR) | Present study, not distributed |
+| Static-to-kinetic loop (NBR) | Present study, not distributed |
 
 ## Notes
 
